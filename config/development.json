@@ -1,0 +1,4 @@
+{
+    "db" : "mongodb://localhost/restfulapi",
+    "jwtPrivateKey" :"SomePrivateKey"
+}
