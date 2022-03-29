@@ -85,7 +85,7 @@ router.delete("/:id",authx,admin,async(req,res)=>{
     return res.send(user);
 });
 
-router.post("/email-sent",async (req,res)=>{
+router.post("/email-sent",auth,async (req,res)=>{
     let user = await userModel.findOne({email : req.body.email});
     if(user)
     {
@@ -104,7 +104,7 @@ router.post("/email-sent",async (req,res)=>{
     // res.status(200).send(response);
 });
 
-router.post("/change-password",async(req,res)=>{
+router.post("/change-password",auth,async(req,res)=>{
     let otp = await optmodel.find({email:req.body.email, code : req.body.code});
     if(otp)
     {
