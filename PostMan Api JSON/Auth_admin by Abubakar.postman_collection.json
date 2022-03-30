@@ -1,0 +1,1809 @@
+{
+	"info": {
+		"_postman_id": "9967c680-9233-49b6-bdc6-5dbf9ce7cf68",
+		"name": "Auth_admin by Abubakar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "abubakar1",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "abubakar1@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "abubakar",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/users/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Signup",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "abubakar1",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "abubakar1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "abubakar",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/users/register",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "50"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"32-xGoL/9gvVmEGX8MbOwRV9/a5dmQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 06:22:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"abubakar1\",\n    \"email\": \"abubakar1@gmail.com\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "abubakar1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "abubakar1@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "abubakar",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/users/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "abubakar1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "abubakar1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "abubakar",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/users/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "175"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"af-G4CEz7nN9iZCBgJg/55Ia51fmZU\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 06:26:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZjcxOGVkMThjNzJjYmFlZGNkODUiLCJuYW1lIjoiYWJ1YmFrYXIxIiwiaWF0IjoxNjQ4NjIxNjAxfQ.DSASBnNFeTtfqr00rTy6CA0SXE-j_6as_Q2vEvf_cqo"
+				}
+			]
+		},
+		{
+			"name": "GetAllUsers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZjcxOGVkMThjNzJjYmFlZGNkODUiLCJuYW1lIjoiYWJ1YmFrYXIxIiwiaWF0IjoxNjQ4NjIxNjAxfQ.DSASBnNFeTtfqr00rTy6CA0SXE-j_6as_Q2vEvf_cqo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/api/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetAllUsers",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZjcxOGVkMThjNzJjYmFlZGNkODUiLCJuYW1lIjoiYWJ1YmFrYXIxIiwiaWF0IjoxNjQ4NjIxNjAxfQ.DSASBnNFeTtfqr00rTy6CA0SXE-j_6as_Q2vEvf_cqo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:3000/api/users",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "535"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"217-wCbZDmhTVmWT2YSSiWOIXewWJU4\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 06:30:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"624194e18ec5b5d1baf86394\",\n        \"role\": \"user\",\n        \"name\": \"hammad\",\n        \"email\": \"hammad@gmail.com\",\n        \"password\": \"$2a$10$oFdQqUwJVqq/zW9f.fR48uQTDxLyUa69F1G.Qaiv.O3oUiqnTGUqa\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62419c8e82f591b8f2fca2d4\",\n        \"role\": \"admin\",\n        \"name\": \"abubakar\",\n        \"email\": \"abubakar@gmail.com\",\n        \"password\": \"$2a$10$jiajQ1aj0HzLkI9mm8b7ruEFxthocG3gTRAHD4z2huHElhdIWYTV6\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6243f718ed18c72cbaedcd85\",\n        \"role\": \"admin\",\n        \"name\": \"abubakar1\",\n        \"email\": \"abubakar1@gmail.com\",\n        \"password\": \"$2a$10$.9A6HH0yNYmDV3Z9q/r9i.kmGrxCiY.vr8AGNfVr9PVutHmJSVRYC\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "GetUserByID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZjcxOGVkMThjNzJjYmFlZGNkODUiLCJuYW1lIjoiYWJ1YmFrYXIxIiwiaWF0IjoxNjQ4NjIxNjAxfQ.DSASBnNFeTtfqr00rTy6CA0SXE-j_6as_Q2vEvf_cqo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/api/users/624194e18ec5b5d1baf86394",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"624194e18ec5b5d1baf86394"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetUserByID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZjcxOGVkMThjNzJjYmFlZGNkODUiLCJuYW1lIjoiYWJ1YmFrYXIxIiwiaWF0IjoxNjQ4NjIxNjAxfQ.DSASBnNFeTtfqr00rTy6CA0SXE-j_6as_Q2vEvf_cqo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:3000/api/users/624194e18ec5b5d1baf86394",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"624194e18ec5b5d1baf86394"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "173"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ad-/K+5lrvAx+WALhFqvwZ4HuInRBA\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 06:31:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"624194e18ec5b5d1baf86394\",\n    \"role\": \"user\",\n    \"name\": \"hammad\",\n    \"email\": \"hammad@gmail.com\",\n    \"password\": \"$2a$10$oFdQqUwJVqq/zW9f.fR48uQTDxLyUa69F1G.Qaiv.O3oUiqnTGUqa\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "AdminInsertUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZjcxOGVkMThjNzJjYmFlZGNkODUiLCJuYW1lIjoiYWJ1YmFrYXIxIiwiaWF0IjoxNjQ4NjIxNjAxfQ.DSASBnNFeTtfqr00rTy6CA0SXE-j_6as_Q2vEvf_cqo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "qasim",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "qasim@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "qasim",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "AdminInsertUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZjcxOGVkMThjNzJjYmFlZGNkODUiLCJuYW1lIjoiYWJ1YmFrYXIxIiwiaWF0IjoxNjQ4NjIxNjAxfQ.DSASBnNFeTtfqr00rTy6CA0SXE-j_6as_Q2vEvf_cqo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "qasim",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "qasim@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "qasim",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/users",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2a-tbyRrE/qubPSLDLdm6Lbfsze0MA\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 06:33:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"qasim\",\n    \"email\": \"qasim@gmail.com\"\n}"
+				}
+			]
+		},
+		{
+			"name": "AdminUpdateUser",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZjcxOGVkMThjNzJjYmFlZGNkODUiLCJuYW1lIjoiYWJ1YmFrYXIxIiwiaWF0IjoxNjQ4NjIxNjAxfQ.DSASBnNFeTtfqr00rTy6CA0SXE-j_6as_Q2vEvf_cqo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "qasim12",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "qasim12@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "qasim12",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/users/6243f9d2b7f2e895e66cbb68",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"6243f9d2b7f2e895e66cbb68"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "AdminUpdateUser",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZjcxOGVkMThjNzJjYmFlZGNkODUiLCJuYW1lIjoiYWJ1YmFrYXIxIiwiaWF0IjoxNjQ4NjIxNjAxfQ.DSASBnNFeTtfqr00rTy6CA0SXE-j_6as_Q2vEvf_cqo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "qasim12",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "qasim12@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "qasim12",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/users/6243f9d2b7f2e895e66cbb68",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"6243f9d2b7f2e895e66cbb68"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2e-BX5EB/0nA+87Nlhwewv4LREwW68\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 06:35:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"qasim12\",\n    \"email\": \"qasim12@gmail.com\"\n}"
+				}
+			]
+		},
+		{
+			"name": "AdminDeleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZjcxOGVkMThjNzJjYmFlZGNkODUiLCJuYW1lIjoiYWJ1YmFrYXIxIiwiaWF0IjoxNjQ4NjIxNjAxfQ.DSASBnNFeTtfqr00rTy6CA0SXE-j_6as_Q2vEvf_cqo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "qasim12",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "qasim12@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "qasim12",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/users/6243f9d2b7f2e895e66cbb68",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"6243f9d2b7f2e895e66cbb68"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "AdminDeleteUser",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZjcxOGVkMThjNzJjYmFlZGNkODUiLCJuYW1lIjoiYWJ1YmFrYXIxIiwiaWF0IjoxNjQ4NjIxNjAxfQ.DSASBnNFeTtfqr00rTy6CA0SXE-j_6as_Q2vEvf_cqo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "qasim12",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "qasim12@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "qasim12",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/users/6243f9d2b7f2e895e66cbb68",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"6243f9d2b7f2e895e66cbb68"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "175"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"af-w0Iq79P+CV3b/InJpCsTHu4zY44\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 06:37:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6243f9d2b7f2e895e66cbb68\",\n    \"role\": \"user\",\n    \"name\": \"qasim12\",\n    \"email\": \"qasim12@gmail.com\",\n    \"password\": \"$2a$10$hamylaALKH7dt7tuCzfH/eFmep2XP45R4k/iXrcUrnBE4se0X0k7a\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "Admin/UserForgotPasswordEmailSent",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZjcxOGVkMThjNzJjYmFlZGNkODUiLCJuYW1lIjoiYWJ1YmFrYXIxIiwiaWF0IjoxNjQ4NjIxNjAxfQ.DSASBnNFeTtfqr00rTy6CA0SXE-j_6as_Q2vEvf_cqo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "qasim12",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "hammad@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "qasim12",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/users/email-sent",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"email-sent"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Admin/UserForgotPasswordEmailSent",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZjcxOGVkMThjNzJjYmFlZGNkODUiLCJuYW1lIjoiYWJ1YmFrYXIxIiwiaWF0IjoxNjQ4NjIxNjAxfQ.DSASBnNFeTtfqr00rTy6CA0SXE-j_6as_Q2vEvf_cqo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "qasim12",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "hammad@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "qasim12",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/users/email-sent",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"email-sent"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "186"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ba-92AUVlYx285Tu2CBDfPE7I/brZk\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 06:38:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6243fb02b7f2e895e66cbb71\",\n    \"email\": \"hammad@gmail.com\",\n    \"code\": \"5110\",\n    \"expireIn\": 1648622638975,\n    \"createdAt\": \"2022-03-30T06:38:58.976Z\",\n    \"updatedAt\": \"2022-03-30T06:38:58.976Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "Admin/UserChangePassword",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZjcxOGVkMThjNzJjYmFlZGNkODUiLCJuYW1lIjoiYWJ1YmFrYXIxIiwiaWF0IjoxNjQ4NjIxNjAxfQ.DSASBnNFeTtfqr00rTy6CA0SXE-j_6as_Q2vEvf_cqo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "hammad",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "hammad@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "1817",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "hammad123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/users/change-password",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"change-password"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Admin/UserForgotPasswordEmailSent Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZjcxOGVkMThjNzJjYmFlZGNkODUiLCJuYW1lIjoiYWJ1YmFrYXIxIiwiaWF0IjoxNjQ4NjIxNjAxfQ.DSASBnNFeTtfqr00rTy6CA0SXE-j_6as_Q2vEvf_cqo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "hammad",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "hammad@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "code",
+									"value": "1817",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "hammad123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/users/change-password",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"change-password"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "29"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1d-DRctH1MHIauyMSq/OuZdEWSc0nU\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 06:41:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Password Changed Succeddfully"
+				}
+			]
+		},
+		{
+			"name": "ProductAdd",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZjcxOGVkMThjNzJjYmFlZGNkODUiLCJuYW1lIjoiYWJ1YmFrYXIxIiwiaWF0IjoxNjQ4NjIxNjAxfQ.DSASBnNFeTtfqr00rTy6CA0SXE-j_6as_Q2vEvf_cqo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Lenovo ThinkPad T480",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "55000",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "1817",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "hammad123",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/products",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ProductAdd",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZjcxOGVkMThjNzJjYmFlZGNkODUiLCJuYW1lIjoiYWJ1YmFrYXIxIiwiaWF0IjoxNjQ4NjIxNjAxfQ.DSASBnNFeTtfqr00rTy6CA0SXE-j_6as_Q2vEvf_cqo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Lenovo ThinkPad T480",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "55000",
+									"type": "text"
+								},
+								{
+									"key": "code",
+									"value": "1817",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "hammad123",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/products",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "86"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"56-s1E5OidXUjhlVuzUql1UU3i8ndE\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 06:46:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6243fca9b7f2e895e66cbb7c\",\n    \"name\": \"Lenovo ThinkPad T480\",\n    \"price\": 55000,\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "UpdateProduct",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZjcxOGVkMThjNzJjYmFlZGNkODUiLCJuYW1lIjoiYWJ1YmFrYXIxIiwiaWF0IjoxNjQ4NjIxNjAxfQ.DSASBnNFeTtfqr00rTy6CA0SXE-j_6as_Q2vEvf_cqo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Lenovo ThinkPad T490",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "65000",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "1817",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "hammad123",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/products/6243fca9b7f2e895e66cbb7c",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"products",
+						"6243fca9b7f2e895e66cbb7c"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "UpdateProduct",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZjcxOGVkMThjNzJjYmFlZGNkODUiLCJuYW1lIjoiYWJ1YmFrYXIxIiwiaWF0IjoxNjQ4NjIxNjAxfQ.DSASBnNFeTtfqr00rTy6CA0SXE-j_6as_Q2vEvf_cqo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Lenovo ThinkPad T490",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "65000",
+									"type": "text"
+								},
+								{
+									"key": "code",
+									"value": "1817",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "hammad123",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/products/6243fca9b7f2e895e66cbb7c",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								"6243fca9b7f2e895e66cbb7c"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "86"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"56-wI1ZTYFSohDe9VwP4vTe5aji0Ws\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 06:49:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6243fca9b7f2e895e66cbb7c\",\n    \"name\": \"Lenovo ThinkPad T490\",\n    \"price\": 65000,\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "DeleteProduct",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZjcxOGVkMThjNzJjYmFlZGNkODUiLCJuYW1lIjoiYWJ1YmFrYXIxIiwiaWF0IjoxNjQ4NjIxNjAxfQ.DSASBnNFeTtfqr00rTy6CA0SXE-j_6as_Q2vEvf_cqo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Lenovo ThinkPad T490",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": "65000",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "code",
+							"value": "1817",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "hammad123",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/products/6243fca9b7f2e895e66cbb7c",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"products",
+						"6243fca9b7f2e895e66cbb7c"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DeleteProduct",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZjcxOGVkMThjNzJjYmFlZGNkODUiLCJuYW1lIjoiYWJ1YmFrYXIxIiwiaWF0IjoxNjQ4NjIxNjAxfQ.DSASBnNFeTtfqr00rTy6CA0SXE-j_6as_Q2vEvf_cqo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Lenovo ThinkPad T490",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "price",
+									"value": "65000",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "code",
+									"value": "1817",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "hammad123",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/products/6243fca9b7f2e895e66cbb7c",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								"6243fca9b7f2e895e66cbb7c"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "86"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"56-wI1ZTYFSohDe9VwP4vTe5aji0Ws\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 06:51:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6243fca9b7f2e895e66cbb7c\",\n    \"name\": \"Lenovo ThinkPad T490\",\n    \"price\": 65000,\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "GetSIngleProduct",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZjcxOGVkMThjNzJjYmFlZGNkODUiLCJuYW1lIjoiYWJ1YmFrYXIxIiwiaWF0IjoxNjQ4NjIxNjAxfQ.DSASBnNFeTtfqr00rTy6CA0SXE-j_6as_Q2vEvf_cqo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Lenovo ThinkPad T490",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": "65000",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "code",
+							"value": "1817",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "hammad123",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/products/62414ca10496344d43b0ed47",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"products",
+						"62414ca10496344d43b0ed47"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetSIngleProduct",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZjcxOGVkMThjNzJjYmFlZGNkODUiLCJuYW1lIjoiYWJ1YmFrYXIxIiwiaWF0IjoxNjQ4NjIxNjAxfQ.DSASBnNFeTtfqr00rTy6CA0SXE-j_6as_Q2vEvf_cqo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Lenovo ThinkPad T490",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "price",
+									"value": "65000",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "code",
+									"value": "1817",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "hammad123",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/products/62414ca10496344d43b0ed47",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								"62414ca10496344d43b0ed47"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "78"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4e-6jbPAj66Fpm+gEwZ/zQ/vLd6FjA\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 06:54:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"62414ca10496344d43b0ed47\",\n    \"name\": \"Dell Alienware\",\n    \"price\": 500,\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "GetAllProducts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZjcxOGVkMThjNzJjYmFlZGNkODUiLCJuYW1lIjoiYWJ1YmFrYXIxIiwiaWF0IjoxNjQ4NjIxNjAxfQ.DSASBnNFeTtfqr00rTy6CA0SXE-j_6as_Q2vEvf_cqo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Lenovo ThinkPad T490",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "price",
+							"value": "65000",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "code",
+							"value": "1817",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "hammad123",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/products/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"products",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetAllProducts",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjQzZjcxOGVkMThjNzJjYmFlZGNkODUiLCJuYW1lIjoiYWJ1YmFrYXIxIiwiaWF0IjoxNjQ4NjIxNjAxfQ.DSASBnNFeTtfqr00rTy6CA0SXE-j_6as_Q2vEvf_cqo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Lenovo ThinkPad T490",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "price",
+									"value": "65000",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "code",
+									"value": "1817",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "hammad123",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/products/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "236"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ec-66XTY0Mh0dpvKwfmfTBmHiSQnaM\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 06:54:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"62414ca10496344d43b0ed47\",\n        \"name\": \"Dell Alienware\",\n        \"price\": 500,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62414e55b5841c54e06f47a8\",\n        \"name\": \"Lenovo Legion\",\n        \"price\": 500,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62418ff9db5fc5e566ef769e\",\n        \"name\": \"Dell Inspiron\",\n        \"price\": 200,\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		}
+	]
+}
